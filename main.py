@@ -3,8 +3,9 @@ import sys
 tasks = []
 
 def add_task(title):
-    # TODO: Implement add task logic
-    pass
+    # Implementation by Ali Hashir
+    tasks.append(title)
+    print(f"Task '{title}' added successfully.")
 
 def show_tasks():
     # Implementation by Momal Rana
