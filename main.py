@@ -7,8 +7,13 @@ def add_task(title):
     pass
 
 def show_tasks():
-    # TODO: Implement show tasks logic
-    pass
+    # Implementation by Momal Rana
+    if not tasks:
+        print("No tasks available.")
+    else:
+        print("Current Tasks:")
+        for index, task in enumerate(tasks):
+            print(f"{index}: {task}")
 
 def delete_task(index):
     # TODO: Implement delete task logic
