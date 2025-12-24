@@ -11,8 +11,16 @@ def show_tasks():
     pass
 
 def delete_task(index):
-    # TODO: Implement delete task logic
-    pass
+    # Implementation by Ashel Aftaab
+    try:
+        index = int(index)
+        if 0 <= index < len(tasks):
+            removed = tasks.pop(index)
+            print(f"Task '{removed}' deleted.")
+        else:
+            print("Invalid task number.")
+    except ValueError:
+        print("Please enter a valid number.")
 
 def main():
     # Simple menu CLI
